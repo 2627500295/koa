@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "name": "koa2-boilerplate",
+            "script": "./server/bin/www",
+            "cwd": ".",
+            "watch": true,
+            "node_args": ["--require", "babel-register"],
+            "env": {
+                "TZ": "Asia/Shanghai",
+                "PORT": "3000",
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}

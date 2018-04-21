@@ -1,0 +1,29 @@
+{
+    "restartable": "rs",
+    "verbose": false,
+
+    "execMap": {
+        "": "node --require babel-register",
+        "es6": "node --require babel-register",
+        "js": "node --require babel-register"
+    },
+
+    "env": {
+        "NODE_ENV": "development",
+        "PORT": "3000"
+    },
+
+    "watch": ["*"],
+    "ignore": [
+        ".git",
+        ".vscode",
+        "node_modules",
+        "server/static",
+        "server/upload",
+        ".babelrc",
+        "package*",
+        "yarn*"
+    ],
+    "ext": "js json",
+    "legacy-watch": false
+}

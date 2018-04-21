@@ -1,0 +1,64 @@
+{
+    "name": "koa2-boilerplate",
+    "version": "1.0.0",
+    "keywords": [
+        "koa2",
+        "boilerplate",
+        "es6",
+        "es7",
+        "MySQL",
+        "redis",
+        "RESTful API"
+    ],
+    "description": "",
+    "private": true,
+    "main": "server/bin/www",
+    "author": {
+        "name": "microld",
+        "email": "2627500295@qq.com",
+        "url": "http://qdz.me"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/2627500295/koa2-boilerplate.git"
+    },
+    "scripts": {
+        "dev:client:node": "node bin/babel-client",
+        "dev:server:node": "node bin/babel-server",
+        "dev:client:nodemon": "./node_modules/.bin/nodemon bin/babel-client -w './client'",
+        "dev:server:nodemon": "./node_modules/.bin/nodemon bin/babel-server -w './server'",
+        "test": "./node_modules/.bin/mocha --require babel-register"
+    },
+    "dependencies": {
+        "koa": "^2.3.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-conditional-get": "^2.0.0",
+        "koa-etag": "^3.0.0",
+        "koa-helmet": "^3.3.0",
+        "koa-json": "^2.0.2",
+        "koa-json-error": "^3.1.2",
+        "koa-logger": "^3.0.1",
+        "koa-onerror": "^3.1.0",
+        "koa-router": "^7.2.1",
+        "koa-static": "^4.0.1",
+        "koa-views": "^6.0.2",
+        "pm2": "^2.5.0",
+        "portscanner": "^2.1.1"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-register": "^6.24.1",
+        "chai": "^4.1.0",
+        "mocha": "^3.4.2",
+        "nodemon": "^1.11.0",
+        "should": "^11.2.1",
+        "supertest": "^3.0.0"
+    },
+    "licenses": [
+        {
+            "type": "Apache License 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ]
+}
